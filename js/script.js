@@ -12,3 +12,16 @@ netx mi prendo index poi ogni click index ++ faccio un active slide (:src'slide[
 bonus
 aggiungere il click al thumbs utilizzando index per farla visualizzare
 */
+
+
+const {createApp} = Vue;
+createApp({
+    data(){
+        return{
+
+        }
+    },
+    methods:{
+
+    }
+}).mount('#app');
