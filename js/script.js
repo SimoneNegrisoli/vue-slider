@@ -57,12 +57,15 @@ createApp({
   methods: {    
     plus(){
         this.activeSlide++
-        // if(activeSlide === activeSlide.length){
-        //     this.activeSlide = 0
-        // }
+        if(this.activeSlide === this.slides.length){
+            this.activeSlide = 0
+        }
     },
     less(){
         this.activeSlide--
+        if(this.activeSlide < 0){
+            this.activeSlide = this.slides.length - 1;
+        }
     }
   },
 }).mount("#app");
