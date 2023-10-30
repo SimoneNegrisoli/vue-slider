@@ -1,5 +1,11 @@
 
 /*
+Descrizione:
+Partendo dal markup fornito, implementare un carousel con Vue.
+Bonus:
+Al click su una thumb, visualizzare in grande l'immagine corrispondente
+
+
 netx mi prendo index poi ogni click index ++ faccio un active slide (:src'slide[activeSlide].image) mentre per le immagini laterali ne imposto una vuota e faccio un ciclo for v-for='(slide,index) in slides' e img :src='slide.image e se l'indice è ugale all'indice della foto visualizzata allora avro una classe active sulle immagini a lato
 
 - inizializzo vue
@@ -45,7 +51,10 @@ createApp({
                 text: "Marvel's Avengers is an epic, third-person, action-adventure game that combines an original, cinematic story with single-player and co-operative gameplay.",
                 },
             ],
+            activeSlide: 0
         };
     },
-  methods: {},
+  methods: {    
+
+  },
 }).mount("#app");
